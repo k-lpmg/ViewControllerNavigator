@@ -16,7 +16,6 @@
 		653994E1212863A800D555E6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653994E0212863A800D555E6 /* PageViewController.swift */; };
 		653994E3212863B100D555E6 /* PageChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653994E2212863B100D555E6 /* PageChildViewController.swift */; };
 		656201A12121BE13000E209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656201A02121BE13000E209D /* AppDelegate.swift */; };
-		656201B62121BE14000E209D /* ViewControllerNavigatorExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656201B52121BE14000E209D /* ViewControllerNavigatorExampleUITests.swift */; };
 		656201C621221793000E209D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656201BF21221792000E209D /* Assets.xcassets */; };
 		656201C721221793000E209D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 656201C021221792000E209D /* Info.plist */; };
 		656201C821221793000E209D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656201C221221793000E209D /* LaunchScreen.storyboard */; };
@@ -25,16 +24,6 @@
 		65F05E402126BAF0004EF4BD /* ViewControllerNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F05E3C2126BAF0004EF4BD /* ViewControllerNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65F05E412126BAF0004EF4BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65F05E3D2126BAF0004EF4BD /* Info.plist */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		656201B22121BE14000E209D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 656201822121B7CB000E209D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6562019D2121BE13000E209D;
-			remoteInfo = ViewControllerNavigatorExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		653994C62128119500D555E6 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
@@ -48,9 +37,6 @@
 		6562018B2121B7CB000E209D /* ViewControllerNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewControllerNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6562019E2121BE13000E209D /* ViewControllerNavigatorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerNavigatorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656201A02121BE13000E209D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		656201B12121BE14000E209D /* ViewControllerNavigatorExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerNavigatorExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		656201B52121BE14000E209D /* ViewControllerNavigatorExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNavigatorExampleUITests.swift; sourceTree = "<group>"; };
-		656201B72121BE14000E209D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656201BF21221792000E209D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		656201C021221792000E209D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656201C321221793000E209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,13 +55,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6562019B2121BE13000E209D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		656201AE2121BE14000E209D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -116,7 +95,6 @@
 			children = (
 				6562018D2121B7CB000E209D /* Sources */,
 				6562019F2121BE13000E209D /* Example */,
-				656201B42121BE14000E209D /* UITests */,
 				6562018C2121B7CB000E209D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,7 +104,6 @@
 			children = (
 				6562018B2121B7CB000E209D /* ViewControllerNavigator.framework */,
 				6562019E2121BE13000E209D /* ViewControllerNavigatorExample.app */,
-				656201B12121BE14000E209D /* ViewControllerNavigatorExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,15 +132,6 @@
 				653994C42128110F00D555E6 /* TabBarController */,
 			);
 			path = Example;
-			sourceTree = "<group>";
-		};
-		656201B42121BE14000E209D /* UITests */ = {
-			isa = PBXGroup;
-			children = (
-				656201B52121BE14000E209D /* ViewControllerNavigatorExampleUITests.swift */,
-				656201B72121BE14000E209D /* Info.plist */,
-			);
-			path = UITests;
 			sourceTree = "<group>";
 		};
 		656201BE2122175F000E209D /* Resources */ = {
@@ -233,24 +201,6 @@
 			productReference = 6562019E2121BE13000E209D /* ViewControllerNavigatorExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		656201B02121BE14000E209D /* ViewControllerNavigatorExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 656201BB2121BE14000E209D /* Build configuration list for PBXNativeTarget "ViewControllerNavigatorExampleUITests" */;
-			buildPhases = (
-				656201AD2121BE14000E209D /* Sources */,
-				656201AE2121BE14000E209D /* Frameworks */,
-				656201AF2121BE14000E209D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				656201B32121BE14000E209D /* PBXTargetDependency */,
-			);
-			name = ViewControllerNavigatorExampleUITests;
-			productName = ViewControllerNavigatorExampleUITests;
-			productReference = 656201B12121BE14000E209D /* ViewControllerNavigatorExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -267,10 +217,6 @@
 					};
 					6562019D2121BE13000E209D = {
 						CreatedOnToolsVersion = 9.4;
-					};
-					656201B02121BE14000E209D = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = 6562019D2121BE13000E209D;
 					};
 				};
 			};
@@ -289,7 +235,6 @@
 			targets = (
 				6562018A2121B7CB000E209D /* ViewControllerNavigator */,
 				6562019D2121BE13000E209D /* ViewControllerNavigatorExample */,
-				656201B02121BE14000E209D /* ViewControllerNavigatorExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,13 +255,6 @@
 				656201C821221793000E209D /* LaunchScreen.storyboard in Resources */,
 				656201C721221793000E209D /* Info.plist in Resources */,
 				656201C621221793000E209D /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		656201AF2121BE14000E209D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,23 +286,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		656201AD2121BE14000E209D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				656201B62121BE14000E209D /* ViewControllerNavigatorExampleUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		656201B32121BE14000E209D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6562019D2121BE13000E209D /* ViewControllerNavigatorExample */;
-			targetProxy = 656201B22121BE14000E209D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		656201C221221793000E209D /* LaunchScreen.storyboard */ = {
@@ -595,52 +517,6 @@
 			};
 			name = Release;
 		};
-		656201BC2121BE14000E209D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = UITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.k-lpmg.ViewControllerNavigatorExampleUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ViewControllerNavigatorExample;
-			};
-			name = Debug;
-		};
-		656201BD2121BE14000E209D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = UITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.k-lpmg.ViewControllerNavigatorExampleUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ViewControllerNavigatorExample;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -667,15 +543,6 @@
 			buildConfigurations = (
 				656201B92121BE14000E209D /* Debug */,
 				656201BA2121BE14000E209D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		656201BB2121BE14000E209D /* Build configuration list for PBXNativeTarget "ViewControllerNavigatorExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				656201BC2121BE14000E209D /* Debug */,
-				656201BD2121BE14000E209D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
