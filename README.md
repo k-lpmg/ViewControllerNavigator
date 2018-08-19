@@ -17,19 +17,16 @@ Moves to a specific ViewController in any iOS ViewStack situation.
 #### move to RootViewController
 ```swift
 ViewControllerNavigator.shared.moveRootViewController()
-}
 ```
 
 #### move to Specific ViewController
 ```swift
 ViewControllerNavigator.shared.move(viewController: TabBarController())
-}
 ```
 
 #### move to Specific ViewController Class
 ```swift
 ViewControllerNavigator.shared.move(class: TabBarController.self)
-}
 ```
 
 #### with Completion
