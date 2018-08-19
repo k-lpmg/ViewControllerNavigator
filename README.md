@@ -6,6 +6,12 @@
 
 Moves to a specific ViewController in any iOS ViewStack situation.
 
+## Introduction
+![navigation](https://user-images.githubusercontent.com/15151687/44308660-d96dce80-a3f4-11e8-9483-29642be29c68.gif)
+![modal](https://user-images.githubusercontent.com/15151687/44308670-faceba80-a3f4-11e8-8acf-3f36cedf0768.gif)
+![tabbar](https://user-images.githubusercontent.com/15151687/44308676-09b56d00-a3f5-11e8-8c04-ff62efd864ad.gif)
+![page](https://user-images.githubusercontent.com/15151687/44308686-19cd4c80-a3f5-11e8-92e2-5b01fc9d2ea1.gif)
+
 ## Installation
 
 #### CocoaPods (iOS 8+)
