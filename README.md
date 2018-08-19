@@ -12,6 +12,33 @@ Moves to a specific ViewController in any iOS ViewStack situation.
 ![tabbar](https://user-images.githubusercontent.com/15151687/44308676-09b56d00-a3f5-11e8-8c04-ff62efd864ad.gif)
 ![page](https://user-images.githubusercontent.com/15151687/44308686-19cd4c80-a3f5-11e8-92e2-5b01fc9d2ea1.gif)
 
+## Usage
+
+#### move to RootViewController
+```swift
+ViewControllerNavigator.shared.moveRootViewController()
+}
+```
+
+#### move to Specific ViewController
+```swift
+ViewControllerNavigator.shared.move(viewController: TabBarController())
+}
+```
+
+#### move to Specific ViewController Class
+```swift
+ViewControllerNavigator.shared.move(class: TabBarController.self)
+}
+```
+
+#### with Completion
+```swift
+ViewControllerNavigator.shared.move(viewController: TabBarController) { (tabBarController) in
+    tabBarController.selectedIndex = 2
+}
+```
+
 ## Installation
 
 #### CocoaPods (iOS 8+)
