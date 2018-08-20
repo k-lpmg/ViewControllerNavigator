@@ -31,7 +31,7 @@ ViewControllerNavigator.shared.move(class: TabBarController.self)
 
 #### with Completion
 ```swift
-ViewControllerNavigator.shared.move(viewController: TabBarController) { (tabBarController) in
+ViewControllerNavigator.shared.move(class: TabBarController.self) { (tabBarController) in
     tabBarController.selectedIndex = 2
 }
 ```
