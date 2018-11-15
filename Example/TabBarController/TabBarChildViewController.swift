@@ -63,7 +63,7 @@ final class TabBarChildViewController: UIViewController {
     // MARK: - Private selector
     
     @objc private func moveRootButtonDidClicked() {
-        ViewControllerNavigator.shared.moveRootViewController()
+        ViewControllerNavigator.moveRootViewController()
     }
     
     @objc private func modalButtonDidClicked() {

@@ -1,17 +1,13 @@
 import UIKit
 
-open class ViewControllerNavigator {
+public enum ViewControllerNavigator {
     
-    public static let shared = ViewControllerNavigator()
-    
-    // MARK: - Public methods
-    
-    public func moveRootViewController(completion: ((UIViewController?) -> Void)? = nil) {
+    public static func moveRootViewController(completion: ((UIViewController?) -> Void)? = nil) {
         guard let rootViewController = UIApplication.shared.keyWindow?.rootViewController else {return}
         move(viewController: rootViewController, completion: completion)
     }
     
-    public func move(viewController target: UIViewController, completion: ((UIViewController?) -> Void)? = nil) {
+    public static func move(viewController target: UIViewController, completion: ((UIViewController?) -> Void)? = nil) {
         let topVC = topViewController()
         guard topVC != target else {
             completion?(topVC)
@@ -52,7 +48,7 @@ open class ViewControllerNavigator {
         })
     }
     
-    public func move(class target: AnyClass, completion: ((UIViewController?) -> Void)? = nil) {
+    public static func move(class target: AnyClass, completion: ((UIViewController?) -> Void)? = nil) {
         let topVC = topViewController()
         guard topVC?.isKind(of: target) == false else {
             completion?(topVC)
@@ -93,7 +89,7 @@ open class ViewControllerNavigator {
         })
     }
     
-    public func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    public static func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         if let navigationController = controller as? UINavigationController {
             return topViewController(controller: navigationController.visibleViewController)
         }
