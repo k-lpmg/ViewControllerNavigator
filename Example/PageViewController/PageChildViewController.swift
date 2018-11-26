@@ -15,19 +15,19 @@ final class PageChildViewController: UIViewController {
     private var moveRootButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("move rootViewController", for: .normal)
+        button.setTitle("move RootViewController", for: .normal)
         return button
     }()
     private let modalButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("modal", for: .normal)
+        button.setTitle("present ModalViewController", for: .normal)
         return button
     }()
     private let navigationButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("navigation", for: .normal)
+        button.setTitle("present UINavigationController", for: .normal)
         return button
     }()
     
@@ -82,17 +82,17 @@ final class PageChildViewController: UIViewController {
 extension PageChildViewController {
     
     private func layout() {
-        titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 120).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 16).isActive = true
         titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
-        moveRootButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 32).isActive = true
-        moveRootButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        moveRootButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 64).isActive = true
+        moveRootButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32).isActive = true
         
         modalButton.topAnchor.constraint(equalTo: moveRootButton.bottomAnchor, constant: 32).isActive = true
-        modalButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        modalButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32).isActive = true
         
         navigationButton.topAnchor.constraint(equalTo: modalButton.bottomAnchor, constant: 32).isActive = true
-        navigationButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        navigationButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32).isActive = true
     }
     
 }

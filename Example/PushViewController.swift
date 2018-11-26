@@ -9,19 +9,19 @@ final class PushViewController: UIViewController {
     private var moveRootButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("move rootViewController", for: .normal)
+        button.setTitle("move RootViewController", for: .normal)
         return button
     }()
     private var pushButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("push", for: .normal)
+        button.setTitle("push PushViewController", for: .normal)
         return button
     }()
     private var modalButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("modal", for: .normal)
+        button.setTitle("present ModalViewController", for: .normal)
         return button
     }()
     
@@ -69,17 +69,19 @@ final class PushViewController: UIViewController {
     
 }
 
+// MARK: - Layout
+
 extension PushViewController {
     
     private func layout() {
-        moveRootButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        moveRootButton.bottomAnchor.constraint(equalTo: pushButton.topAnchor, constant: -32).isActive = true
+        moveRootButton.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 64).isActive = true
+        moveRootButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32).isActive = true
         
-        pushButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        pushButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        pushButton.topAnchor.constraint(equalTo: moveRootButton.bottomAnchor, constant: 32).isActive = true
+        pushButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32).isActive = true
         
-        modalButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         modalButton.topAnchor.constraint(equalTo: pushButton.bottomAnchor, constant: 32).isActive = true
+        modalButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32).isActive = true
     }
     
 }
