@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ViewControllerNavigator"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "Moves to a specific ViewController in any iOS ViewStack situation"
   s.homepage     = "https://github.com/k-lpmg/ViewControllerNavigator"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
