@@ -7,10 +7,17 @@
 Moves to a specific ViewController in any iOS ViewStack situation.
 
 ## Introduction
-![modally](https://user-images.githubusercontent.com/15151687/48996102-2ac4f100-f18e-11e8-9655-1bb91e7db226.gif)
-![navigating](https://user-images.githubusercontent.com/15151687/48996144-51832780-f18e-11e8-9012-e03600602120.gif)
-![page](https://user-images.githubusercontent.com/15151687/48996245-bb9bcc80-f18e-11e8-95ed-95c015721d96.gif)
-![tabbar](https://user-images.githubusercontent.com/15151687/48996253-c2c2da80-f18e-11e8-9aa8-229a76ff31b6.gif)
+### Modally
+![modally](https://user-images.githubusercontent.com/15151687/48996478-9e1b3280-f18f-11e8-89be-c663f91ff74c.gif)
+
+### Navigating
+![navigating](https://user-images.githubusercontent.com/15151687/48996480-9f4c5f80-f18f-11e8-85b5-20f84d3414f6.gif)
+
+### Page
+![page](https://user-images.githubusercontent.com/15151687/48996481-a1162300-f18f-11e8-96aa-f0e66a0b4078.gif)
+
+### TabBar
+![tabbar](https://user-images.githubusercontent.com/15151687/48996534-d15dc180-f18f-11e8-830b-982abaf370f6.gif)
 
 ## Usage
 
