@@ -7,31 +7,31 @@
 Moves to a specific ViewController in any iOS ViewStack situation.
 
 ## Introduction
-![navigation](https://user-images.githubusercontent.com/15151687/44308660-d96dce80-a3f4-11e8-9483-29642be29c68.gif)
-![modal](https://user-images.githubusercontent.com/15151687/44308670-faceba80-a3f4-11e8-8acf-3f36cedf0768.gif)
-![tabbar](https://user-images.githubusercontent.com/15151687/44308676-09b56d00-a3f5-11e8-8c04-ff62efd864ad.gif)
-![page](https://user-images.githubusercontent.com/15151687/44308686-19cd4c80-a3f5-11e8-92e2-5b01fc9d2ea1.gif)
+![modally](https://user-images.githubusercontent.com/15151687/48996102-2ac4f100-f18e-11e8-9655-1bb91e7db226.gif)
+![navigating](https://user-images.githubusercontent.com/15151687/48996144-51832780-f18e-11e8-9012-e03600602120.gif)
+![page](https://user-images.githubusercontent.com/15151687/48996245-bb9bcc80-f18e-11e8-95ed-95c015721d96.gif)
+![tabbar](https://user-images.githubusercontent.com/15151687/48996253-c2c2da80-f18e-11e8-9aa8-229a76ff31b6.gif)
 
 ## Usage
 
 #### move to RootViewController
 ```swift
-ViewControllerNavigator.shared.moveRootViewController()
+ViewControllerNavigator.moveRootViewController()
 ```
 
 #### move to Specific ViewController
 ```swift
-ViewControllerNavigator.shared.move(viewController: TabBarController())
+ViewControllerNavigator.move(TabBarController())
 ```
 
 #### move to Specific ViewController Class
 ```swift
-ViewControllerNavigator.shared.move(class: TabBarController.self)
+ViewControllerNavigator.move(TabBarController.self)
 ```
 
 #### with Completion
 ```swift
-ViewControllerNavigator.shared.move(class: TabBarController.self) { (tabBarController) in
+ViewControllerNavigator.move(TabBarController.self) { (tabBarController) in
     tabBarController.selectedIndex = 2
 }
 ```
