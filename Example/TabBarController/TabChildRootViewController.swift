@@ -2,7 +2,7 @@ import UIKit
 
 import ViewControllerNavigator
 
-final class TabBarChildViewController: UIViewController {
+final class TabBarChildRootViewController: UIViewController {
     
     // MARK: - Properties
     
@@ -61,10 +61,7 @@ final class TabBarChildViewController: UIViewController {
     
     private func setProperties() {
         view.backgroundColor = .white
-        
-        let count = navigationController?.viewControllers.count ?? 1
-        title = count == 1 ? type.rawValue.appending(" - Root") :
-            type.rawValue.appending(" - \(String(describing: navigationController?.viewControllers.count ?? 0))")
+        title = type.rawValue
     }
     
     private func setSelector() {
@@ -100,7 +97,7 @@ final class TabBarChildViewController: UIViewController {
 
 // MARK: - Layout
 
-extension TabBarChildViewController {
+extension TabBarChildRootViewController {
     
     private func layout() {
         moveRootButton.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 64).isActive = true

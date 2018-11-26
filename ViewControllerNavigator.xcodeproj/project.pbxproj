@@ -11,13 +11,16 @@
 		653994CE2128119700D555E6 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653994C72128119500D555E6 /* PushViewController.swift */; };
 		653994D22128119700D555E6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653994CB2128119500D555E6 /* MainTableViewController.swift */; };
 		653994D8212811A500D555E6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653994D7212811A500D555E6 /* TabBarController.swift */; };
-		653994DC2128462F00D555E6 /* TabBarChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653994DB2128462F00D555E6 /* TabBarChildViewController.swift */; };
 		653994DE21284AB700D555E6 /* NavigationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653994DD21284AB700D555E6 /* NavigationControllers.swift */; };
 		653994E1212863A800D555E6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653994E0212863A800D555E6 /* PageViewController.swift */; };
 		653994E3212863B100D555E6 /* PageChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653994E2212863B100D555E6 /* PageChildViewController.swift */; };
 		656201A12121BE13000E209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656201A02121BE13000E209D /* AppDelegate.swift */; };
 		656201C621221793000E209D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656201BF21221792000E209D /* Assets.xcassets */; };
 		656201C821221793000E209D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656201C221221793000E209D /* LaunchScreen.storyboard */; };
+		65D55053219D146900568CC9 /* TabBarNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D55051219D131B00568CC9 /* TabBarNavigationController.swift */; };
+		65D55062219D30E200568CC9 /* TabBarModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D55061219D30E200568CC9 /* TabBarModalViewController.swift */; };
+		65ED1B6421AB9F8700011D1C /* TabChildRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED1B6321AB9F8700011D1C /* TabChildRootViewController.swift */; };
+		65ED1B6621ABA0EF00011D1C /* TabBarChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED1B6521ABA0EF00011D1C /* TabBarChildViewController.swift */; };
 		65F05E3E2126BAF0004EF4BD /* UINavigationController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F05E3A2126BAF0004EF4BD /* UINavigationController-Extension.swift */; };
 		65F05E3F2126BAF0004EF4BD /* ViewControllerNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F05E3B2126BAF0004EF4BD /* ViewControllerNavigator.swift */; };
 		65F05E402126BAF0004EF4BD /* ViewControllerNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F05E3C2126BAF0004EF4BD /* ViewControllerNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,7 +31,6 @@
 		653994C72128119500D555E6 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		653994CB2128119500D555E6 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		653994D7212811A500D555E6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		653994DB2128462F00D555E6 /* TabBarChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarChildViewController.swift; sourceTree = "<group>"; };
 		653994DD21284AB700D555E6 /* NavigationControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllers.swift; sourceTree = "<group>"; };
 		653994E0212863A800D555E6 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		653994E2212863B100D555E6 /* PageChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageChildViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,10 @@
 		656201BF21221792000E209D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		656201C021221792000E209D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656201C321221793000E209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65D55051219D131B00568CC9 /* TabBarNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarNavigationController.swift; sourceTree = "<group>"; };
+		65D55061219D30E200568CC9 /* TabBarModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModalViewController.swift; sourceTree = "<group>"; };
+		65ED1B6321AB9F8700011D1C /* TabChildRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabChildRootViewController.swift; sourceTree = "<group>"; };
+		65ED1B6521ABA0EF00011D1C /* TabBarChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarChildViewController.swift; sourceTree = "<group>"; };
 		65F05E3A2126BAF0004EF4BD /* UINavigationController-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationController-Extension.swift"; path = "ViewControllerNavigator/UINavigationController-Extension.swift"; sourceTree = "<group>"; };
 		65F05E3B2126BAF0004EF4BD /* ViewControllerNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerNavigator.swift; path = ViewControllerNavigator/ViewControllerNavigator.swift; sourceTree = "<group>"; };
 		65F05E3C2126BAF0004EF4BD /* ViewControllerNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerNavigator.h; path = ViewControllerNavigator/ViewControllerNavigator.h; sourceTree = "<group>"; };
@@ -73,8 +79,11 @@
 		653994C42128110F00D555E6 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				653994DB2128462F00D555E6 /* TabBarChildViewController.swift */,
+				65ED1B6521ABA0EF00011D1C /* TabBarChildViewController.swift */,
 				653994D7212811A500D555E6 /* TabBarController.swift */,
+				65D55061219D30E200568CC9 /* TabBarModalViewController.swift */,
+				65D55051219D131B00568CC9 /* TabBarNavigationController.swift */,
+				65ED1B6321AB9F8700011D1C /* TabChildRootViewController.swift */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -271,13 +280,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				653994E3212863B100D555E6 /* PageChildViewController.swift in Sources */,
+				65ED1B6421AB9F8700011D1C /* TabChildRootViewController.swift in Sources */,
 				653994D8212811A500D555E6 /* TabBarController.swift in Sources */,
-				653994DC2128462F00D555E6 /* TabBarChildViewController.swift in Sources */,
 				653994CD2128119700D555E6 /* ModalViewController.swift in Sources */,
 				653994DE21284AB700D555E6 /* NavigationControllers.swift in Sources */,
 				653994D22128119700D555E6 /* MainTableViewController.swift in Sources */,
+				65D55062219D30E200568CC9 /* TabBarModalViewController.swift in Sources */,
+				65D55053219D146900568CC9 /* TabBarNavigationController.swift in Sources */,
 				653994CE2128119700D555E6 /* PushViewController.swift in Sources */,
 				656201A12121BE13000E209D /* AppDelegate.swift in Sources */,
+				65ED1B6621ABA0EF00011D1C /* TabBarChildViewController.swift in Sources */,
 				653994E1212863A800D555E6 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

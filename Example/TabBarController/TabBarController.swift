@@ -1,6 +1,45 @@
 import UIKit
 
+enum TabBarType: String {
+    case tab1 = "Tab1"
+    case tab2 = "Tab2"
+    case tab3 = "Tab3"
+    case tab4 = "Tab4"
+}
+
 final class TabBarController: UITabBarController {
+
+    // MARK: - UI Components
+    
+    let childRootVC1 = TabBarChildRootViewController(type: .tab1)
+    let childRootVC2 = TabBarChildRootViewController(type: .tab2)
+    let childRootVC3 = TabBarChildRootViewController(type: .tab3)
+    let childRootVC4 = TabBarChildRootViewController(type: .tab4)
+    
+    lazy var childNavigation1: TabBarNavigationController = {
+        let rootViewController = self.childRootVC1
+        let navigationController = TabBarNavigationController(rootViewController: rootViewController)
+        navigationController.tabBarItem = UITabBarItem(title: rootViewController.type.rawValue, image: nil, tag: 0)
+        return navigationController
+    }()
+    lazy var childNavigation2: TabBarNavigationController = {
+        let rootViewController = self.childRootVC2
+        let navigationController = TabBarNavigationController(rootViewController: rootViewController)
+        navigationController.tabBarItem = UITabBarItem(title: rootViewController.type.rawValue, image: nil, tag: 1)
+        return navigationController
+    }()
+    lazy var childNavigation3: TabBarNavigationController = {
+        let rootViewController = self.childRootVC3
+        let navigationController = TabBarNavigationController(rootViewController: rootViewController)
+        navigationController.tabBarItem = UITabBarItem(title: rootViewController.type.rawValue, image: nil, tag: 2)
+        return navigationController
+    }()
+    lazy var childNavigation4: TabBarNavigationController = {
+        let rootViewController = self.childRootVC4
+        let navigationController = TabBarNavigationController(rootViewController: rootViewController)
+        navigationController.tabBarItem = UITabBarItem(title: rootViewController.type.rawValue, image: nil, tag: 3)
+        return navigationController
+    }()
     
     // MARK: - Overridden: UITabBarController
     
@@ -14,14 +53,7 @@ final class TabBarController: UITabBarController {
     
     private func setProperties() {
         view.backgroundColor = .white
-        let viewControllers = [TabBarChildViewController(title: "Child1"), TabBarChildViewController(title: "Child2"), TabBarChildViewController(title: "Child3"), TabBarChildViewController(title: "Child4")]
-        self.viewControllers = viewControllers
-        if let items = tabBar.items {
-            items[0].title = "1"
-            items[1].title = "2"
-            items[2].title = "3"
-            items[3].title = "4"
-        }
+        viewControllers = [childNavigation1, childNavigation2, childNavigation3, childNavigation4]
     }
     
 }
