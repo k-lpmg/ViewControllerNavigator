@@ -4,88 +4,106 @@ public enum ViewControllerNavigator {
     
     public static func moveRootViewController(completion: ((UIViewController?) -> Void)? = nil) {
         guard let rootViewController = UIApplication.shared.keyWindow?.rootViewController else {return}
-        move(viewController: rootViewController, completion: completion)
+        move(rootViewController, completion: completion)
     }
     
-    public static func move(viewController target: UIViewController, completion: ((UIViewController?) -> Void)? = nil) {
+    public static func move(_ target: UIViewController, completion: ((UIViewController?) -> Void)? = nil) {
         let topVC = topViewController()
-        guard topVC != target else {
+        guard topVC?.isEqualViewController(target) == false else {
             completion?(topVC)
             return
         }
         
         let parent = topVC?.parent
         if let navigationController = parent as? UINavigationController {
-            guard navigationController != target else {
+            guard navigationController.isEqualViewController(target) == false else {
                 completion?(navigationController)
                 return
             }
             
             guard navigationController.isRootViewControllerShown else {
                 navigationController.popViewController(animated: false)
-                move(viewController: target, completion: completion)
+                move(target, completion: completion)
                 return
             }
-            
-            guard navigationController.presentingViewController != nil else {
-                completion?(topVC)
-                return
-            }
-            
-            parent?.dismiss(animated: false, completion: {
-                self.move(viewController: target, completion: completion)
-            })
-        } else if let tabBarController = parent as? UITabBarController, tabBarController == target {
+        } else if let tabBarController = parent as? UITabBarController, tabBarController.isEqualViewController(target) {
             completion?(tabBarController)
             return
-        } else if let pageViewController = parent as? UIPageViewController, pageViewController == target {
+        } else if let pageViewController = parent as? UIPageViewController, pageViewController.isEqualViewController(target) {
             completion?(pageViewController)
             return
         }
         
+        if let navigationController = topVC?.navigationController {
+            guard navigationController.isEqualViewController(target) == false else {
+                completion?(navigationController)
+                return
+            }
+            
+            guard navigationController.isRootViewControllerShown else {
+                navigationController.popViewController(animated: false)
+                move(target, completion: completion)
+                return
+            }
+        }
+        
+        if let tabBarController = topVC?.tabBarController, tabBarController.isEqualViewController(target) {
+            completion?(tabBarController)
+            return
+        }
+        
         topVC?.dismiss(animated: false, completion: {
-            self.move(viewController: target, completion: completion)
+            self.move(target, completion: completion)
         })
     }
     
-    public static func move(class target: AnyClass, completion: ((UIViewController?) -> Void)? = nil) {
+    public static func move(_ target: AnyClass, completion: ((UIViewController?) -> Void)? = nil) {
         let topVC = topViewController()
-        guard topVC?.isKind(of: target) == false else {
+        guard topVC?.isEqualViewController(target) == false else {
             completion?(topVC)
             return
         }
         
         let parent = topVC?.parent
         if let navigationController = parent as? UINavigationController {
-            guard navigationController.isKind(of: target) == false else {
+            guard navigationController.isEqualViewController(target) == false else {
                 completion?(navigationController)
                 return
             }
             
             guard navigationController.isRootViewControllerShown else {
                 navigationController.popViewController(animated: false)
-                move(class: target, completion: completion)
+                move(target, completion: completion)
                 return
             }
-            
-            guard navigationController.presentingViewController != nil else {
-                completion?(topVC)
-                return
-            }
-            
-            parent?.dismiss(animated: false, completion: {
-                self.move(class: target, completion: completion)
-            })
-        } else if let tabBarController = parent as? UITabBarController, tabBarController.isKind(of: target) {
+        } else if let tabBarController = parent as? UITabBarController, tabBarController.isEqualViewController(target) {
             completion?(tabBarController)
             return
-        } else if let pageViewController = parent as? UIPageViewController, pageViewController.isKind(of: target) {
+        } else if let pageViewController = parent as? UIPageViewController, pageViewController.isEqualViewController(target) {
             completion?(pageViewController)
             return
         }
         
+        if let navigationController = topVC?.navigationController {
+            guard navigationController.isEqualViewController(target) == false else {
+                completion?(navigationController)
+                return
+            }
+            
+            guard navigationController.isRootViewControllerShown else {
+                navigationController.popViewController(animated: false)
+                move(target, completion: completion)
+                return
+            }
+        }
+        
+        if let tabBarController = topVC?.tabBarController, tabBarController.isEqualViewController(target) {
+            completion?(tabBarController)
+            return
+        }
+        
         topVC?.dismiss(animated: false, completion: {
-            self.move(class: target, completion: completion)
+            self.move(target, completion: completion)
         })
     }
     
@@ -100,6 +118,18 @@ public enum ViewControllerNavigator {
             return topViewController(controller: presented)
         }
         return controller
+    }
+    
+}
+
+private extension UIViewController {
+    
+    func isEqualViewController(_ target: UIViewController) -> Bool {
+        return self == target
+    }
+    
+    func isEqualViewController(_ target: AnyClass) -> Bool {
+        return self.isKind(of: target)
     }
     
 }
