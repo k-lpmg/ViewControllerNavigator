@@ -2,6 +2,8 @@ import UIKit
 
 public enum ViewControllerNavigator {
     
+    // MARK: - Public static method
+    
     public static func moveRootViewController(completion: ((UIViewController?) -> Void)? = nil) {
         guard let rootViewController = UIApplication.shared.keyWindow?.rootViewController else {return}
         move(rootViewController, completion: completion)
@@ -28,7 +30,7 @@ public enum ViewControllerNavigator {
         return controller
     }
     
-    // MARK: - Private methods
+    // MARK: - Private static methods
     
     private static func moveProxy<T>(_ targetType: T.Type? = nil,
                                      _ targetInstance: T? = nil,
