@@ -4,7 +4,7 @@
 ![Swift](https://img.shields.io/badge/Swift-4.1-orange.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://raw.githubusercontent.com/k-lpmg/ViewControllerNavigator/master/LICENSE)
 
-Moves to a specific ViewController in any iOS ViewStack situation.
+ViewControllerNavigator is a framework that can iOS to move to any view controller instance or class from any view controller stack.
 
 ## Introduction
 ### Modally
