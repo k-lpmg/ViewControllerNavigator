@@ -46,8 +46,8 @@
 		65ED1B6521ABA0EF00011D1C /* TabBarChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarChildViewController.swift; sourceTree = "<group>"; };
 		65F05E3A2126BAF0004EF4BD /* UINavigationController-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationController-Extension.swift"; path = "ViewControllerNavigator/UINavigationController-Extension.swift"; sourceTree = "<group>"; };
 		65F05E3B2126BAF0004EF4BD /* ViewControllerNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerNavigator.swift; path = ViewControllerNavigator/ViewControllerNavigator.swift; sourceTree = "<group>"; };
-		65F05E3C2126BAF0004EF4BD /* ViewControllerNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerNavigator.h; path = ViewControllerNavigator/ViewControllerNavigator.h; sourceTree = "<group>"; };
-		65F05E3D2126BAF0004EF4BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ViewControllerNavigator/Info.plist; sourceTree = "<group>"; };
+		65F05E3C2126BAF0004EF4BD /* ViewControllerNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerNavigator.h; sourceTree = "<group>"; };
+		65F05E3D2126BAF0004EF4BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +100,8 @@
 		656201812121B7CB000E209D = {
 			isa = PBXGroup;
 			children = (
+				65F05E3D2126BAF0004EF4BD /* Info.plist */,
+				65F05E3C2126BAF0004EF4BD /* ViewControllerNavigator.h */,
 				6562018D2121B7CB000E209D /* Sources */,
 				6562019F2121BE13000E209D /* Example */,
 				6562018C2121B7CB000E209D /* Products */,
@@ -118,9 +120,7 @@
 		6562018D2121B7CB000E209D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				65F05E3D2126BAF0004EF4BD /* Info.plist */,
 				65F05E3A2126BAF0004EF4BD /* UINavigationController-Extension.swift */,
-				65F05E3C2126BAF0004EF4BD /* ViewControllerNavigator.h */,
 				65F05E3B2126BAF0004EF4BD /* ViewControllerNavigator.swift */,
 			);
 			path = Sources;
@@ -441,7 +441,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/ViewControllerNavigator/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +469,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/ViewControllerNavigator/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
