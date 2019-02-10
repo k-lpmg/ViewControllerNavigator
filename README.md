@@ -4,7 +4,7 @@
 ![Swift](https://img.shields.io/badge/Swift-4.1-orange.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://raw.githubusercontent.com/k-lpmg/ViewControllerNavigator/master/LICENSE)
 
-Framework that can iOS to move to any view controller instance or class from any view controller stack.
+It allows you to pop in any view controller stack on iOS. For example, when tab, navigation, modal, and page are stacked together, it can pops up a class or instance of a specific view controller.
 
 ## Introduction
 ### Modally
