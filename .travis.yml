@@ -7,10 +7,6 @@ env:
   matrix:
     - SDK="$IOS_SDK" DESTINATION="platform=iOS Simulator,OS=12.2,name=iPhone X"
 
-before_install:
-  - travis_wait pod repo update --silent
-  - pod install
-
 install:
   - swift --version
 
