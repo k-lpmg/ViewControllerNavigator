@@ -2,7 +2,6 @@
 [![Cocoapods](https://img.shields.io/cocoapods/v/ViewControllerNavigator.svg?style=flat)](https://cocoapods.org/pods/ViewControllerNavigator)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://raw.githubusercontent.com/k-lpmg/ViewControllerNavigator/master/LICENSE)
 
 Allows you to pop in any view controller stack on iOS. For example, when tab, navigation, modal, and page are stacked together, it can pops up a class or instance of a specific view controller.
 
