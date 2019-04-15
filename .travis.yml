@@ -15,12 +15,12 @@ before_script:
 
 script:
     - xcodebuild clean build
-      -workspace "$PROJECT"
+      -project "$PROJECT"
       -scheme ViewControllerNavigator
       -sdk "$SDK"
       -destination "$DESTINATION" | xcpretty -c
     - xcodebuild clean build
-      -workspace "$PROJECT"
+      -project "$PROJECT"
       -scheme ViewControllerNavigatorExample
       -sdk "$SDK"
       -destination "$DESTINATION" | xcpretty -c
