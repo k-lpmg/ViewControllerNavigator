@@ -17,6 +17,7 @@
 		656201A12121BE13000E209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656201A02121BE13000E209D /* AppDelegate.swift */; };
 		656201C621221793000E209D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656201BF21221792000E209D /* Assets.xcassets */; };
 		656201C821221793000E209D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656201C221221793000E209D /* LaunchScreen.storyboard */; };
+		65C4A49C22648FF0002C890D /* ViewControllerNavigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6562018B2121B7CB000E209D /* ViewControllerNavigator.framework */; };
 		65D55053219D146900568CC9 /* TabBarNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D55051219D131B00568CC9 /* TabBarNavigationController.swift */; };
 		65D55062219D30E200568CC9 /* TabBarModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D55061219D30E200568CC9 /* TabBarModalViewController.swift */; };
 		65ED1B6421AB9F8700011D1C /* TabChildRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED1B6321AB9F8700011D1C /* TabChildRootViewController.swift */; };
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C4A49C22648FF0002C890D /* ViewControllerNavigator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +107,7 @@
 				6562018D2121B7CB000E209D /* Sources */,
 				6562019F2121BE13000E209D /* Example */,
 				6562018C2121B7CB000E209D /* Products */,
+				65C4A49B22648FF0002C890D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +160,13 @@
 				656201C221221793000E209D /* LaunchScreen.storyboard */,
 			);
 			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		65C4A49B22648FF0002C890D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
