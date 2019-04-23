@@ -56,7 +56,7 @@ target '<Your Target Name>' do
 end
 ```
 
-### Carthage (iOS 8+)
+#### Carthage (iOS 8+)
 
 ```ruby
 github "k-lpmg/ViewControllerNavigator"
